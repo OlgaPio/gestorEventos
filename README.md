@@ -58,29 +58,55 @@ gestorEventos/
 │
 ├── backend/             # Contiene el código del backend (Node.js)
 │   ├── src/             # Archivos fuente del backend
-│   │   ├── config/      # Archivos de configuración de la base de datos)
+│   │   ├── config/      # Archivos de configuración de la base de datos
+│   │   │   └── db.js    # Archivo de configuración de la base de datos
 │   │   ├── controllers/ # Controladores para manejar las rutas
+│   │   │   ├── authController.js  # Controlador de autenticación
+│   │   │   └── eventController.js # Controlador de eventos
 │   │   ├── middlewares/ # Archivos para manejar la autenticación
+│   │   │   └── authMiddleware.js  # Middleware de autenticación
 │   │   ├── models/      # Modelos de MongoDB para usuarios y eventos
+│   │   │   ├── Event.js # Modelo de eventos
+│   │   │   └── User.js  # Modelo de usuarios
 │   │   └── routes/      # Rutas de la API
+│   │       ├── authRoutes.js  # Rutas de autenticación
+│   │       └── eventRoutes.js # Rutas de eventos
 │   ├── .env             # Archivo de variables de entorno (como MONGO_URI, JWT_SECRET, etc.)
 │   ├── server.js        # Archivo principal que inicia el servidor (punto de entrada)
 │   └── package.json     # Dependencias y scripts para el backend
 │
 ├── frontend/            # Contiene el código del frontend (React)
 │   ├── public/          # Archivos estáticos (imagenes, iconos, etc.)
+│   │   └── index.html   # Página principal estática
 │   ├── src/             # Archivos fuente de React
 │   │   ├── components/  # Componentes de React reutilizables
-│   │   ├── context/     # Archivos para el manejo del estado global 
+│   │   │   ├── AuthForm.js    # Formulario de autenticación
+│   │   │   ├── EventCard.js   # Componente para mostrar un evento
+│   │   │   ├── Footer.js      # Componente de pie de página
+│   │   │   └── Navbar.js      # Componente de barra de navegación
+│   │   ├── context/     # Archivos para el manejo del estado global
+│   │   │   └── AuthContext.js # Contexto de autenticación
 │   │   ├── pages/       # Páginas de la aplicación
+│   │   │   ├── Dashboard.js    # Página principal del dashboard
+│   │   │   ├── EventForm.js    # Página para agregar/editar eventos
+│   │   │   ├── Home.js         # Página de inicio
+│   │   │   ├── Login.js        # Página de inicio de sesión
+│   │   │   └── Register.js     # Página de registro
 │   │   ├── services/    # Funciones para interactuar con el backend o APIs
-│   │   └── styles/      # Archivos de estilos (CSS)
-│   └── package.json     # Dependencias y scripts para el frontend
+│   │   │   └── api.js    # Archivo de interacción con la API
+│   │   ├── styles/      # Archivos de estilos (CSS)
+│   │   │   ├── EventCard.css    # Estilo para el componente de tarjeta de evento
+│   │   │   ├── dashboard.css   # Estilo para la página del dashboard
+│   │   │   ├── footer.css      # Estilo para el pie de página
+│   │   │   ├── global.css      # Estilos globales
+│   │   │   └── home.css        # Estilo para la página de inicio
+│   │   ├── App.js           # Componente principal de React
+│   │   └── index.js         # Punto de entrada de React
+│   │   ├── .env             # Archivo de variables de entorno para el frontend (como REACT_APP_API_URL, etc.)
+│   ├── .gitignore           # Archivos y carpetas que no se suben al repositorio (ahora dentro de 'frontend')
+│   └── package.json         # Dependencias y scripts para el frontend
 │
-├── .gitignore           # Archivos y carpetas que no se suben al repositorio
 ├── README.md            # Este archivo
-└── package.json         # Dependencias y scripts generales para todo el proyecto
-
 ```
 
 
