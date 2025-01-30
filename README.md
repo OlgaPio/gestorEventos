@@ -58,12 +58,12 @@ gestorEventos/
 │
 ├── backend/             # Contiene el código del backend (Node.js)
 │   ├── src/             # Archivos fuente del backend
-│   │   ├── config/      # Archivos de configuración (por ejemplo, configuración de la base de datos)
+│   │   ├── config/      # Archivos de configuración de la base de datos)
 │   │   ├── controllers/ # Controladores para manejar las rutas
-│   │   ├── middlewares/ # Archivos para manejar la autenticación y otras funciones intermedias
+│   │   ├── middlewares/ # Archivos para manejar la autenticación
 │   │   ├── models/      # Modelos de MongoDB para usuarios y eventos
 │   │   └── routes/      # Rutas de la API
-│   ├── .env             # Archivo de variables de entorno (como DB_URL, JWT_SECRET, etc.)
+│   ├── .env             # Archivo de variables de entorno (como MONGO_URI, JWT_SECRET, etc.)
 │   ├── server.js        # Archivo principal que inicia el servidor (punto de entrada)
 │   └── package.json     # Dependencias y scripts para el backend
 │
@@ -71,10 +71,10 @@ gestorEventos/
 │   ├── public/          # Archivos estáticos (imagenes, iconos, etc.)
 │   ├── src/             # Archivos fuente de React
 │   │   ├── components/  # Componentes de React reutilizables
-│   │   ├── context/     # Archivos para el manejo del estado global (si usas contexto o algo similar)
+│   │   ├── context/     # Archivos para el manejo del estado global 
 │   │   ├── pages/       # Páginas de la aplicación
 │   │   ├── services/    # Funciones para interactuar con el backend o APIs
-│   │   └── styles/      # Archivos de estilos (CSS, SCSS, etc.)
+│   │   └── styles/      # Archivos de estilos (CSS)
 │   └── package.json     # Dependencias y scripts para el frontend
 │
 ├── .gitignore           # Archivos y carpetas que no se suben al repositorio
