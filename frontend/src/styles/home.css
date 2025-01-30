@@ -1,0 +1,71 @@
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .welcome-section {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .auth-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .auth-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .auth-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .auth-form-text {
+    color: black; /* O el color que prefieras */
+  }
+  
+  .auth-section button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-section button:hover {
+    background: #1a5bbf;
+  }
+  
+  .auth-section a {
+    color: #2575fc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .auth-section a:hover {
+    text-decoration: underline;
+  }

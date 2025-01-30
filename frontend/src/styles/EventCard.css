@@ -1,0 +1,56 @@
+/* Estilos generales de la tarjeta */
+.event-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    min-height: 280px;
+    width: 100%;
+    max-width: 335px;
+    margin-bottom: 10px;
+  }
+  
+  /* Centrar el contenido de la tarjeta */
+  .event-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Cambiar el color del título */
+  .event-title {
+    color: #4caf50; 
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos de los textos */
+  .event-text {
+    color: #666;
+    margin: 5px 0;
+    max-width: 90%;
+  }
+  
+  /* Contenedor de botones */
+  .event-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  /* Botones */
+  .event-actions button {
+    flex: 1;
+    font-weight: bold;
+    max-width: 140px;
+  }
+  
