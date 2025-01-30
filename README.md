@@ -51,8 +51,9 @@ Cada evento tiene los siguientes campos:
 - **Autenticación:**
   - JWT (JSON Web Tokens)
 
-## **Estructura del Proyecto**
+## **Estructura del Proyecto en Carpetas**
 
+```bash
 gestorEventos/
 │
 ├── backend/             # Contiene el código del backend (Node.js)
@@ -80,7 +81,7 @@ gestorEventos/
 ├── README.md            # Este archivo
 └── package.json         # Dependencias y scripts generales para todo el proyecto
 
-
+```
 
 
 ## **Instrucciones de Instalación**
